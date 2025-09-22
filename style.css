@@ -1,4 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url("https://use.typekit.net/lbo4spw.css");
+
+:root{
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #38b6ff;
+    --secondary-color: #5C7280;
+    --color-1: #5a9abf;
+    --color-2: #FFAA38;
+    --color-3: #f6f3f9;
+}
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: var(--text-color);
+}
+
+body{
+    padding: 1em;
+    background-color: var(--base-color);
+}
+
+h1, h2, h3{
+    font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-family: Merriweather, Poppins;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+header, section{
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--primary-color);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header img{
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.text-container{
+    flex: 0 1 34em;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.text-container p{
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}
+
+.cta-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-2);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.secondary{
+    background-color: var(--secondary-color);
+
 }
